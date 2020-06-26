@@ -55,9 +55,20 @@ const grades = [100, 80, 110, 75, 83, 64];
 printGradesBackwards(grades);
 
 // Challenge 3
+challengeBanner(3);
+
+function printEvenNumbers(arr) {
+  for(i = 0; i < arr.length; i++) {
+    let isEven = arr[i] % 2 === 0 ? true : false;
+    if(isEven) {
+      console.log(arr[i])
+    }
+  }
+}
 // Console.log out only the even numbers in the following array.
 const positiveNumbers = [5, 2, 13, 17, 4, 102, 3000];
 
+printEvenNumbers(positiveNumbers);
 
 // Challenge 4
 // Console.log out the even numbers in the following array, INCLUDING the negative ones. There should be four of them!
