@@ -7,7 +7,7 @@
 //
 // Challenge banner time! Write a function that console.logs "####### Challenge n #######", where n is the number passed into the function.
 function challengeBanner(n) {
-  return `####### Challenge ${n} #######`;
+  console.log(`####### Challenge ${n} #######`);
 }
 // Call this function before each of the below challenges, passing in the number of the current challenge.
 // 
@@ -41,9 +41,18 @@ const students = [
 printStudents(students);
 
 // Challenge 2
+challengeBanner(2);
+
+function printGradesBackwards(grades) {
+  const lastGrade = grades.length - 1;
+  for(let i = lastGrade; i > -1; i--) {
+    console.log(grades[i]);
+  }
+}
 // Loop through the following array BACKWARDS, console.logging out each value. 64 should be first and 100 last.
 const grades = [100, 80, 110, 75, 83, 64];
 
+printGradesBackwards(grades);
 
 // Challenge 3
 // Console.log out only the even numbers in the following array.
