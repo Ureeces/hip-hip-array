@@ -58,7 +58,7 @@ printGradesBackwards(grades);
 challengeBanner(3);
 
 function printEvenNumbers(arr) {
-  for(i = 0; i < arr.length; i++) {
+  for(let i = 0; i < arr.length; i++) {
     let isEven = arr[i] % 2 === 0 ? true : false;
     if(isEven) {
       console.log(arr[i])
@@ -71,9 +71,20 @@ const positiveNumbers = [5, 2, 13, 17, 4, 102, 3000];
 printEvenNumbers(positiveNumbers);
 
 // Challenge 4
+challengeBanner(4);
+
+function printEvenNumbers2(arr) {
+  for(let i = 0; i < arr.length; i++) {
+    let isEven = Math.abs(arr[i]) % 2 === 0 ? true : false;
+    if(isEven) {
+      console.log(arr[i]);
+    }
+  }
+}
 // Console.log out the even numbers in the following array, INCLUDING the negative ones. There should be four of them!
 const mixedSignNumbers = [3, 15, 14, -2, -3, -8, -103, 4];
 
+printEvenNumbers2(mixedSignNumbers);
 
 // Challenge 5
 // Remove two values from the beginning and one value from the end of the following array, simply by deleting them in the following line. Then console.log out each value individually.
