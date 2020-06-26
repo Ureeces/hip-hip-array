@@ -6,12 +6,21 @@
 // Challenge 0
 //
 // Challenge banner time! Write a function that console.logs "####### Challenge n #######", where n is the number passed into the function.
-//
+function challengeBanner(n) {
+  return `####### Challenge ${n} #######`;
+}
 // Call this function before each of the below challenges, passing in the number of the current challenge.
 // 
 //
 // Challenge 1
-//
+challengeBanner(1);
+
+function printStudents(students) {
+  for(let i = 0; i < students.length; i++) {
+    console.log(students[i]);
+  }
+}
+
 // Loop through the following array, console.logging out each value.
 const students = [
   'Bogdan',
@@ -29,6 +38,7 @@ const students = [
   'Wilson',
 ];
 
+printStudents(students);
 
 // Challenge 2
 // Loop through the following array BACKWARDS, console.logging out each value. 64 should be first and 100 last.
