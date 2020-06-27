@@ -102,9 +102,20 @@ const symmetricalCapitals = ['A', 'H', 'I', 'M', 'O', 'T', 'U', 'V', 'W', 'X', '
 remove3(symmetricalCapitals);
 
 // Challenge 6
+challengeBanner(6);
+
+function add3(arr, start, end1, end2) {
+  arr.splice(0, 0, start);
+  arr.splice(arr.length, 0, end1);
+  arr.splice(arr.length, 0, end2);
+  for(let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
 // Add a value (your choice!) to the start of the following array and two values (of your choice) to the end simply by adding them in the following line, and then console.log out each value individually.
 const fibonacciNumbers = [1, 1, 2, 3, 5, 8, 13];
 
+add3(fibonacciNumbers, 0, 21, 34);
 
 // Challenge 7
 // Make a NEW array with 5 values of your choice, using the same syntax as the arrays from the previous 6 challenges, that is, every value should be placed within the square brackets.  Now console.log out each value individually.
