@@ -87,9 +87,19 @@ const mixedSignNumbers = [3, 15, 14, -2, -3, -8, -103, 4];
 printEvenNumbers2(mixedSignNumbers);
 
 // Challenge 5
+challengeBanner(5);
+
+function remove3(arr) {
+  arr.splice(0, 2);
+  arr.splice(arr.length - 1, 1)
+  for(let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
 // Remove two values from the beginning and one value from the end of the following array, simply by deleting them in the following line. Then console.log out each value individually.
 const symmetricalCapitals = ['A', 'H', 'I', 'M', 'O', 'T', 'U', 'V', 'W', 'X', 'Y'];
 
+remove3(symmetricalCapitals);
 
 // Challenge 6
 // Add a value (your choice!) to the start of the following array and two values (of your choice) to the end simply by adding them in the following line, and then console.log out each value individually.
