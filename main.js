@@ -118,12 +118,24 @@ const fibonacciNumbers = [1, 1, 2, 3, 5, 8, 13];
 add3(fibonacciNumbers, 0, 21, 34);
 
 // Challenge 7
-// Make a NEW array with 5 values of your choice, using the same syntax as the arrays from the previous 6 challenges, that is, every value should be placed within the square brackets.  Now console.log out each value individually.
+challengeBanner(7);
 
+function printArray(arr) {
+  for(let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+// Make a NEW array with 5 values of your choice, using the same syntax as the arrays from the previous 6 challenges, that is, every value should be placed within the square brackets.  Now console.log out each value individually.
+const myArray = [3, 10, 7, 7, 5];
+
+printArray(myArray);
 
 // Challenge 8
+challengeBanner(8);
 // Make a new EMPTY array and fill it with five values of your choice using BOTH .push AND .unshift, and then console.log out each value individually.
+const emptyArray = [];
 
+printArray(emptyArray);
 
 // Challenge 9
 // Loop through the `students` array from Challenge 1, starting at index 3 and ending at index 10 (INCLUSIVE), logging out each value individually.
