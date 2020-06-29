@@ -150,17 +150,12 @@ for(let i = 3; i < 11; i++) {
 // Challenge 10
 challengeBanner(10);
 // Loop through the `students` array from Challenge 1, making a COPY of the array, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy indivudally.
-const studentsCopy = [
-  'Denis',
-  'Jumary',
-  'Marc',
-  'Deaundre',
-  'LaToddra',
-  'Michael',
-  'Patrick',
-  'Sharod',
-  'Tyrell',
-];
+const studentsCopy = [];
+
+for(let i = 3; i < 11; i++) {
+  studentsCopy.push(students[i]);
+}
+
 printArray(studentsCopy);
 
 // Challenge 11
