@@ -138,31 +138,65 @@ const emptyArray = [];
 printArray(emptyArray);
 
 // Challenge 9
-// Loop through the `students` array from Challenge 1, starting at index 3 and ending at index 10 (INCLUSIVE), logging out each value individually.
+challengeBanner(9);
 
+// Loop through the `students` array from Challenge 1, starting at index 3 and ending at index 10 (INCLUSIVE), logging out each value individually.
+for(let i = 3; i < 11; i++) {
+  console.log(students[i]);
+}
 
 // Challenge 10
+challengeBanner(10);
 // Loop through the `students` array from Challenge 1, making a COPY of the array, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy indivudally.
-
+const studentsCopy = [
+  'Denis',
+  'Jumary',
+  'Marc',
+  'Deaundre',
+  'LaToddra',
+  'Michael',
+  'Patrick',
+  'Sharod',
+  'Tyrell',
+];
+printArray(studentsCopy);
 
 // Challenge 11
+challengeBanner(11);
 // Make a COPY of the `students` array *using .slice*, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually. THEN log out each value of the original array. Notice that the two arrays are the same, because `slice` does NOT modify the original array.
+const studentsSlice = students.slice(3, 11);
+console.log("\nSlice Array:");
+printArray(studentsSlice);
 
+console.log("\nOriginal Array:");
+printArray(students);
 
 // Challenge 12
+challengeBanner(12);
 // Pull the items at the 4th-6th indices (inclusive) from the following array using .splice (NOT .slice!), then console.log out each item from the ORIGINAL array. Note that .splice DOES change the original array.
 const dinosaurs = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
-
+dinosaurs.splice(4, 3);
+printArray(dinosaurs);
 
 // Challenge 13
+challengeBanner(13);
 // Use .join to change the dinosaur strings from the above array into one string with a '*' string as the "separator". Then console.log out that string.
-
+const dinoString = dinosaurs.join("*");
+console.log(dinoString);
 
 // Challenge 14
+challengeBanner(14);
 // Use .reverse to reverse the dinosaur array and then log out the original array. .reverse DOES change the original array.
-
+dinosaurs.reverse();
+console.log(dinosaurs);
 
 // Challenge 15
+challengeBanner(15);
 // Use .concat to combine the following two arrays into a NEW array you make. Then console.log out each value of that new array individually. Now console.log both the primaries and secondaries arrays, noting that .concat does NOT mutate the original arrays.
 const primaries = ['red', 'yellow', 'blue'];
 const secondaries = ['orange', 'green', 'purple'];
+const colors = primaries.concat(secondaries);
+
+printArray(colors);
+printArray(primaries);
+printArray(secondaries);
