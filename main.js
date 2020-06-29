@@ -134,6 +134,8 @@ printArray(myArray);
 challengeBanner(8);
 // Make a new EMPTY array and fill it with five values of your choice using BOTH .push AND .unshift, and then console.log out each value individually.
 const emptyArray = [];
+emptyArray.push("pushed");
+emptyArray.unshift("1", "2", "3", "4");
 
 printArray(emptyArray);
 
